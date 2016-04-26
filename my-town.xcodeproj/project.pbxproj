@@ -12,6 +12,10 @@
 		9D52706F1CC58FC000DAD72A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D52706D1CC58FC000DAD72A /* Main.storyboard */; };
 		9D5270711CC58FC000DAD72A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5270701CC58FC000DAD72A /* Assets.xcassets */; };
 		9D5270741CC58FC000DAD72A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5270721CC58FC000DAD72A /* LaunchScreen.storyboard */; };
+		9D52707D1CC5904E00DAD72A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52707C1CC5904E00DAD72A /* Post.swift */; };
+		9D5270801CC59F2400DAD72A /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52707F1CC59F2400DAD72A /* PostCell.swift */; };
+		9D5270831CC5A96200DAD72A /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5270821CC5A96200DAD72A /* AddPostVC.swift */; };
+		9DAA6CFF1CC6E7A2005FA258 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA6CFE1CC6E7A2005FA258 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		9D5270701CC58FC000DAD72A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D5270731CC58FC000DAD72A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D5270751CC58FC100DAD72A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D52707C1CC5904E00DAD72A /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		9D52707F1CC59F2400DAD72A /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		9D5270821CC5A96200DAD72A /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		9DAA6CFE1CC6E7A2005FA258 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		9D5270681CC58FC000DAD72A /* my-town */ = {
 			isa = PBXGroup;
 			children = (
+				9DAA6CFD1CC6E77D005FA258 /* Services */,
+				9D52707B1CC5901A00DAD72A /* Model */,
+				9D52707E1CC59EBE00DAD72A /* View */,
+				9D5270811CC5A8D000DAD72A /* Controller */,
 				9D5270691CC58FC000DAD72A /* AppDelegate.swift */,
-				9D52706B1CC58FC000DAD72A /* ViewController.swift */,
-				9D52706D1CC58FC000DAD72A /* Main.storyboard */,
 				9D5270701CC58FC000DAD72A /* Assets.xcassets */,
-				9D5270721CC58FC000DAD72A /* LaunchScreen.storyboard */,
 				9D5270751CC58FC100DAD72A /* Info.plist */,
 			);
 			path = "my-town";
+			sourceTree = "<group>";
+		};
+		9D52707B1CC5901A00DAD72A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D52707C1CC5904E00DAD72A /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9D52707E1CC59EBE00DAD72A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D52707F1CC59F2400DAD72A /* PostCell.swift */,
+				9D52706D1CC58FC000DAD72A /* Main.storyboard */,
+				9D5270721CC58FC000DAD72A /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9D5270811CC5A8D000DAD72A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D52706B1CC58FC000DAD72A /* ViewController.swift */,
+				9D5270821CC5A96200DAD72A /* AddPostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9DAA6CFD1CC6E77D005FA258 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9DAA6CFE1CC6E7A2005FA258 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D52707D1CC5904E00DAD72A /* Post.swift in Sources */,
 				9D52706C1CC58FC000DAD72A /* ViewController.swift in Sources */,
+				9D5270831CC5A96200DAD72A /* AddPostVC.swift in Sources */,
+				9DAA6CFF1CC6E7A2005FA258 /* DataService.swift in Sources */,
 				9D52706A1CC58FC000DAD72A /* AppDelegate.swift in Sources */,
+				9D5270801CC59F2400DAD72A /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +336,7 @@
 				9D52707A1CC58FC100DAD72A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
